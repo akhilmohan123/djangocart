@@ -30,7 +30,7 @@ class Usermanager(BaseUserManager):
 class User(AbstractBaseUser):
     username=models.CharField(max_length=20,unique=True)
     email=models.EmailField(unique=True,max_length=20)
-    phonenumber=models.CharField(unique=True)
+   
     #required fileds
     date_joined=models.DateTimeField(auto_now_add=True)
     last_login=models.DateTimeField(auto_now_add=True)
